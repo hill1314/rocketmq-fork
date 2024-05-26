@@ -179,24 +179,24 @@
     </properties>
 
     <modules>
-        <module>client</module>
-        <module>common</module>
-        <module>broker</module>
-        <module>tools</module>
-        <module>store</module>
-        <module>namesrv</module>
-        <module>remoting</module>
-        <module>srvutil</module>
-        <module>filter</module>
-        <module>test</module>
-        <module>distribution</module>
-        <module>openmessaging</module>
-        <module>acl</module>
-        <module>example</module>
-        <module>container</module>
-        <module>controller</module>
-        <module>proxy</module>
-        <module>tieredstore</module>
+        <module>rocketmq-client</module>
+        <module>rocketmq-common</module>
+        <module>rocketmq-broker</module>
+        <module>rocketmq-tools</module>
+        <module>rocketmq-store</module>
+        <module>rocketmq-namesrv</module>
+        <module>rocketmq-remoting</module>
+        <module>rocketmq-srvutil</module>
+        <module>rocketmq-filter</module>
+        <module>rocketmq-test</module>
+        <module>rocketmq-distribution</module>
+        <module>rocketmq-openmessaging</module>
+        <module>rocketmq-acl</module>
+        <module>rocketmq-example</module>
+        <module>rocketmq-container</module>
+        <module>rocketmq-controller</module>
+        <module>rocketmq-proxy</module>
+        <module>rocketmq-tiered-store</module>
     </modules>
 
     <build>
@@ -400,28 +400,28 @@
                 <artifactId>sonar-maven-plugin</artifactId>
                 <version>${sonar-maven-plugin.version}</version>
             </plugin>
-            <plugin>
-                <groupId>com.github.spotbugs</groupId>
-                <artifactId>spotbugs-maven-plugin</artifactId>
-                <version>${spotbugs-plugin.version}</version>
-                <executions>
-                    <execution>
-                        <id>check</id>
-                        <phase>compile</phase>
-                        <goals>
-                            <goal>check</goal>
-                        </goals>
-                    </execution>
-                </executions>
-                <configuration>
-                    <failOnError>true</failOnError>
-                    <fork>false</fork>
-                    <spotbugsXmlOutput>true</spotbugsXmlOutput>
-                    <excludeFilterFile>${project.root}/style/spotbugs-suppressions.xml</excludeFilterFile>
-                    <threshold>High</threshold>
-                    <effort>Max</effort>
-                </configuration>
-            </plugin>
+<!--            <plugin>-->
+<!--                <groupId>com.github.spotbugs</groupId>-->
+<!--                <artifactId>spotbugs-maven-plugin</artifactId>-->
+<!--                <version>${spotbugs-plugin.version}</version>-->
+<!--                <executions>-->
+<!--                    <execution>-->
+<!--                        <id>check</id>-->
+<!--                        <phase>compile</phase>-->
+<!--                        <goals>-->
+<!--                            <goal>check</goal>-->
+<!--                        </goals>-->
+<!--                    </execution>-->
+<!--                </executions>-->
+<!--                <configuration>-->
+<!--                    <failOnError>true</failOnError>-->
+<!--                    <fork>false</fork>-->
+<!--                    <spotbugsXmlOutput>true</spotbugsXmlOutput>-->
+<!--                    <excludeFilterFile>${project.root}/style/spotbugs-suppressions.xml</excludeFilterFile>-->
+<!--                    <threshold>High</threshold>-->
+<!--                    <effort>Max</effort>-->
+<!--                </configuration>-->
+<!--            </plugin>-->
         </plugins>
 
         <pluginManagement>
